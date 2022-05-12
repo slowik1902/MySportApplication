@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sportable"
+                    android:layout_alignParentLeft="true"
+                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:src="@drawable/messages"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/my_events_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/buttons_background"
+            android:text="My events"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/quick_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_background"
+            android:text="Quick search"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/manual_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/buttons_background"
+            android:text="Manual search"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/sports_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/buttons_background"
+            android:text="Sports"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
